@@ -1,10 +1,11 @@
 
 // ---------- import Packs
 import React from 'react';
+import JSON5 from 'json5';
 import { Image } from 'react-native';
 
 // ---------- import Local Tools
-import { getStlValues, pathSel } from '../project';
+import { getStlValues, pathSel, getVarValue } from '../project';
 import { useData } from '../../..';
 
 type Tprops = {
@@ -37,6 +38,15 @@ export const ImageBox = (props: Tprops) => {
   let pathOrUri = URIvariablePath.join();
   const isUrl = checkUrl(pathOrUri);
 
+  const { condChildren, newArgChildren } = testArgs([pathOrUri], args);
+
+  if (condChildren === 'arg') pathOrUri = newArgChildren;
+  if (condChildren === 'var') {
+    const joinedChld = pathOrUri.replace('$var_', '');
+    console.log({ joinedChld });
+    pathOrUri = useData(ct => pathSel(ct, joinedChld));
+  }
+
   // ---------- set Watch Data
   const watchData = useData(ct => {
     let condUri: string;
@@ -52,18 +62,21 @@ export const ImageBox = (props: Tprops) => {
 
   // ------- set User Element Properties (If Exists)
   const userElProps: any = {};
-  for (const object of elementsProperties) {
-    for (const keyProp in object) {
-      const valueProp = object[keyProp];
-      userElProps[keyProp] = valueProp;
+  for (let strObj of elementsProperties) {
+    if (!strObj || typeof strObj !== 'string') continue;
+
+    console.log('TEXT', { strObj });
+    const parsedObject = JSON5.parse(strObj);
+
+    for (const keyProp in parsedObject) {
+      const valueProp = parsedObject[keyProp];
+      const [hasVar, varValue] = getVarValue(valueProp, 'Component');
+      userElProps[keyProp] = hasVar ? varValue : valueProp;
     }
   }
 
   console.log({ watchData });
-  const condURI = !watchData || watchData === '';
-
-  console.log({ condURI });
-  const condFinalURI = condURI ? defaultUri : watchData;
+  const condFinalURI = !watchData || watchData === '' ? defaultUri : watchData;
 
   console.log({ condFinalURI });
 
@@ -74,10 +87,50 @@ export const ImageBox = (props: Tprops) => {
     ...userElProps,
   };
 
-  return (
-    <>
-      <Image {...allProps} />
-    </>
-  );
+  console.log({ allProps });
+
+  return <Image {...allProps} />;
 };
 
+const findFlatItem = obj => {
+  if (typeof obj !== 'object' || obj === null) return null;
+
+  if ('item' in obj) return obj.item;
+
+  for (const key in obj) {
+    if (Array.isArray(obj[key])) {
+      for (const element of obj[key]) {
+        const found = findFlatItem(element);
+        if (found) return found;
+      }
+    } else if (typeof obj[key] === 'object') {
+      const found = findFlatItem(obj[key]);
+      if (found) return found;
+    }
+  }
+  return null;
+};
+
+const testArgs = (children, args) => {
+  let condChildren = '';
+  let newArgChildren = 'undefined';
+
+  const joinedChild = children.join();
+  if (joinedChild.includes('$var_')) condChildren = 'var';
+  if (joinedChild.includes('$arg_')) condChildren = 'arg';
+
+  if (condChildren === 'arg') {
+    const key = joinedChild.split('_')[1];
+    console.log('TEXT', { key });
+
+    const foundItem = findFlatItem(args);
+    if (foundItem && key in foundItem) {
+      newArgChildren = foundItem[key];
+      console.log('TEXT', { newArgChildren });
+    }
+  }
+
+  if (newArgChildren === 'undefined') console.log('ARG NOT FOUND');
+
+  return { condChildren, newArgChildren };
+};
