@@ -1,0 +1,39 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "add": "^2.0.6",
+    "base-64": "^1.0.0",
+    "core-js": "^3.40.0",
+    "css-to-react-native": "^3.2.0",
+    "expo": "~52.0.37",
+    "expo-status-bar": "~2.0.1",
+    "firebase": "^11.4.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-native": "^0.78.0",
+    "react-native-fetch-api": "^3.0.0",
+    "react-native-get-random-values": "^1.11.0",
+    "react-native-polyfill-globals": "^3.1.0",
+    "react-native-svg": "^15.11.2",
+    "react-native-url-polyfill": "^2.0.0",
+    "react-native-web": "^0.19.13",
+    "text-encoding": "^0.7.0",
+    "timers": "^0.1.1",
+    "yarn": "^1.22.22",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@types/react": "~18.3.12",
+    "typescript": "^5.3.3"
+  },
+  "private": true
+}
