@@ -732,7 +732,7 @@
           },
           "ccc_flatList-2": {
             "capsIptCodeID": "ccc_flatList-2",
-            "capsIptPosition": "3",
+            "capsIptPosition": "2",
             "capsIptRemoved": false,
             "capsIptType": "capsules",
             "capsIptCapsInfo": {
@@ -750,7 +750,7 @@
           },
           "ccc_flatList-3": {
             "capsIptCodeID": "ccc_flatList-3",
-            "capsIptPosition": "2",
+            "capsIptPosition": "3",
             "capsIptRemoved": false,
             "capsIptType": "capsules",
             "capsIptCapsInfo": {
@@ -762,8 +762,8 @@
                 "pt-br": "",
                 "en": ""
               },
-              "capsIptCapsDfCode": "\n  {\n  backgroundColor: 'white',\n  justifyContent: 'center',\n      minHeight: 22,\n    width: \"100%\",\n  }\n ",
-              "capsIptCapsTypesToAdd": ["string process"]
+              "capsIptCapsDfCode": "\n              {\n                backgroundColor: 'white',\n                justifyContent: 'center',\n                minHeight: 22,\n                width: \"100%\",\n              }\n              ",
+              "capsIptCapsTypesToAdd": ["free value", "string process"]
             }
           }
         },
