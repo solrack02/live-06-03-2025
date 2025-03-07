@@ -182,7 +182,7 @@
 'cond1': false, 
 'func1': (nativeEvent)=>console.log(nativeEvent), 
 'Comp1': <RN.Text style={{color: "darkred"}}>---</RN.Text>, 
-'lists': { 'lt1': [{name: "João", img: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},{name: "Luciana"},{name: "Pedro"}] } 
+'lists': { 'lt1': [{name: "João", img: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},{name: "Luciana", img: "https://images.unsplash.com/photo-1578489758854-f134a358f08b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},{name: "Pedro"}] } 
 , 'name': "Name:" } 
  
 } 
