@@ -5,7 +5,7 @@ import JSON5 from 'json5';
 import { FlatList } from 'react-native';
 
 // ---------- import Local Tools
-import { mapElements, pathSel, getVarValue } from '../project';
+import { getStlValues, mapElements, getVarValue, pathSel } from '../project';
 import { useData } from '../../..';
 
 type Tprops = {
@@ -13,6 +13,7 @@ type Tprops = {
     elementProperties: any;
     pData: any;
     itemElements: any;
+    styles: any;
     args: any;
   };
 };
@@ -20,7 +21,7 @@ type Tprops = {
 // FlatList2 - ccc_flatList (newBase)
 export const FlatList2 = (props: Tprops) => {
   // ------- set Caps Inputs
-  const { elementProperties, pData, itemElements, args } = props.pass;
+  const { elementProperties, pData, itemElements, styles, args } = props.pass;
 
   // ---------- set Data Listener
   console.log({ itemElements });
@@ -51,7 +52,11 @@ export const FlatList2 = (props: Tprops) => {
     }
   }
 
+  // ------- set Styles
+  const stl = getStlValues(styles);
+
   const allProps = {
+    style: stl,
     data: watchData,
     renderItem,
 
