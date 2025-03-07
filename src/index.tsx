@@ -73,7 +73,7 @@
             {}
           ],
 
-          pData: '',
+          pData: 'all.lists.lt1',
 
           itemElements: [
             (...args:any) => <Elements.Text pass={{
