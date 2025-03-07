@@ -68,7 +68,8 @@
 
             args,
           }}/>
-        , (...args:any) => <Elements.FlatList2 pass={{
+        , 
+        (...args:any) => <Elements.FlatList2 pass={{
           elementProperties: [
             '{ItemSeparatorComponent: "$var_all.Comp1"}'
           ],
@@ -150,7 +151,25 @@
           ],
 
           args,
-        }}/>],
+        }}/>, 
+
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[
+              {
+                height: "50px",
+                width: "80px",
+                backgroundColor: "#FDFDFD",
+                borderWidth: 2,
+                borderColor: "#EEE"
+              }
+              ],
+
+      URIvariablePath:['$var_all.Imagem1'],
+
+      args,
+    }}/>],
 
           functions:[()=>{}],
 
@@ -201,7 +220,8 @@
 'func1': (nativeEvent)=>console.log(nativeEvent), 
 'Comp1': <RN.Text style={{color: "darkred"}}>---</RN.Text>, 
 'lists': { 'lt1': [{name: "João", img: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},{name: "Luciana", img: "https://images.unsplash.com/photo-1578489758854-f134a358f08b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},{name: "Pedro"}] } 
-, 'name': "Name:" } 
+, 
+'name': "Name:", 'Imagem1': "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" } 
  
 } 
  );
