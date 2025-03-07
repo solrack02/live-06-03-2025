@@ -94,7 +94,7 @@
         }}/>
           ],
 
-      styles:['{ flex: 1, backgroundColor: "black"}'],    args,
+      styles:['{ flex: 1, backgroundColor: "black", width: "100%", height: 60 }'],    args,
         }}/>],
 
           functions:[()=>{}],
