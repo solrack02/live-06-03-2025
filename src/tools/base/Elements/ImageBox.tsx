@@ -47,10 +47,14 @@ export const ImageBox = (props: Tprops) => {
     pathOrUri = useData(ct => pathSel(ct, joinedChld));
   }
 
-  // Se for uma URL válida, usa diretamente, senão busca no useData
+  // ---------- set Watch Data
   const watchData = useData(ct => {
-    if (checkUrl(pathOrUri)) return pathOrUri; // Se for uma URL, usa diretamente
-    return pathSel(ct, pathOrUri); // Caso contrário, busca do caminho de dados
+    let condUri: string;
+
+    if (!isUrl) condUri = pathSel(ct, pathOrUri); // Is a Path (select data path)
+    if (isUrl) condUri = pathOrUri; // Is a URL (maintains)
+
+    return condUri;
   });
 
   // ---------- set Styles
@@ -72,9 +76,7 @@ export const ImageBox = (props: Tprops) => {
   }
 
   console.log({ watchData });
-  const condFinalURI = checkUrl(newArgChildren)
-    ? newArgChildren
-    : watchData || defaultUri;
+  const condFinalURI = !watchData || watchData === '' ? defaultUri : watchData;
 
   console.log({ condFinalURI });
 
@@ -84,6 +86,8 @@ export const ImageBox = (props: Tprops) => {
     resizeMode: 'cover',
     ...userElProps,
   };
+
+  console.log({ allProps });
 
   return <Image {...allProps} />;
 };
