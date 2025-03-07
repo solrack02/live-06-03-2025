@@ -76,7 +76,8 @@
           pData: 'all.lists.lt1',
 
           itemElements: [
-            (...args:any) => <Elements.Text pass={{
+            
+        (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -86,12 +87,45 @@
           ],
 
           children: [
-            "Escreva..."
+            '$arg_name'
           ],
 
           args,
 
-        }}/>
+        }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            '$arg_name'
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        
           ],
 
       styles:['{ flex: 1, backgroundColor: "yellow", width: "100%", height: 60 }'],    args,
