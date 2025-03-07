@@ -33,6 +33,7 @@
           styles:['{ backgroundColor: "red", alignItems: "center", justifyContent: "center", flex: 1 }'],
 
           screenElements:[
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{ disabled: "$var_all.cond1", onHoverIn: "$var_all.func1", children: "$var_all.Comp1" }'],
@@ -67,7 +68,34 @@
 
             args,
           }}/>
-        ],
+        , (...args:any) => <Elements.FlatList2 pass={{
+          elementProperties: [
+            {}
+          ],
+
+          pData: '',
+
+          itemElements: [
+            
+              (...args) => {
+                return (
+                  <RN.Text>
+                    Adicione os campos que quer mostrar aqui.
+                  </RN.Text>
+                );
+              }
+              
+          ],
+
+      styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],    args,
+        }}/>],
 
           functions:[()=>{}],
 
