@@ -692,7 +692,7 @@
           "en": "A performant interface for rendering basic, flat lists"
         },
         "capsCodeTypes": ["Elemento de Tela", "FlatList"],
-        "capsCodeText": "(...args:any) => <Elements.FlatList2 pass={{\n          elementProperties: [\n            !#!Element Properties!#!\n          ],\n\n          pData: !#!Path Data!#!,\n\n          itemElements: [\n            !#!Item Elements!#!\n    styles:[!#!styles!#!],\n\n  ],\n\n          args,\n        }}/>",
+        "capsCodeText": "(...args:any) => <Elements.FlatList2 pass={{\n          elementProperties: [\n            !#!Element Properties!#!\n          ],\n\n          pData: !#!Path Data!#!,\n\n          itemElements: [\n            !#!Item Elements!#!\n   \n\n  ], styles:[!#!styles!#!],\n\n          args,\n        }}/>",
         "capsCodeInputs": {
           "ccc_flatList-0": {
             "capsIptCodeID": "ccc_flatList-0",
