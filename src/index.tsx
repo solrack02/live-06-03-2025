@@ -33,7 +33,6 @@
           styles:['{ backgroundColor: "red", alignItems: "center", justifyContent: "center", flex: 1 }'],
 
           screenElements:[
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{ disabled: "$var_all.cond1", onHoverIn: "$var_all.func1", children: "$var_all.Comp1" }'],
@@ -68,108 +67,7 @@
 
             args,
           }}/>
-        , 
-        (...args:any) => <Elements.FlatList2 pass={{
-          elementProperties: [
-            '{ItemSeparatorComponent: "$var_all.Comp1"}'
-          ],
-
-          pData: 'all.lists.lt1',
-
-          itemElements: [
-            
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
-
-            functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
-
-          children: [
-            '$arg_name'
-          ],
-
-          args,
-
-        }}/>, 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
-
-            functions:[()=>{}],            childrenItems:[
-
-    (...args:any) => <Elements.ImageBox pass={{
-      elementsProperties:[{}],
-
-      styles:[
-              {
-                height: "50px",
-                width: "80px",
-                backgroundColor: "#FDFDFD",
-                borderWidth: 2,
-                borderColor: "#EEE"
-              }
-              ],
-
-      URIvariablePath:['$arg_img'],
-
-      args,
-    }}/>],
-
-            args,
-          }}/>
         ],
-
-            args,
-          }}/>
-        
-          ],
-
-          args,
-        }}/>, 
-
-    (...args:any) => <Elements.ImageBox pass={{
-      elementsProperties:[{}],
-
-      styles:[
-              {
-                height: "50px",
-                width: "80px",
-                backgroundColor: "#FDFDFD",
-                borderWidth: 2,
-                borderColor: "#EEE"
-              }
-              ],
-
-      URIvariablePath:['$var_all.Imagem1'],
-
-      args,
-    }}/>],
 
           functions:[()=>{}],
 
