@@ -76,7 +76,8 @@
           pData: 'all.lists.lt1',
 
           itemElements: [
-            (...args:any) => <Elements.Text pass={{
+            
+        (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -91,7 +92,25 @@
 
           args,
 
-        }}/>
+        }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        
           ],
 
           args,
