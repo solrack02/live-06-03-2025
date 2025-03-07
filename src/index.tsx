@@ -87,14 +87,7 @@
               
           ],
 
-      styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],    args,
+      styles:['{ flex: 1, backgroundColor: "black"}'],    args,
         }}/>],
 
           functions:[()=>{}],
