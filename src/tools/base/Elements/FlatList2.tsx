@@ -36,10 +36,13 @@ export const FlatList2 = (props: Tprops) => {
   );
 
   // ------- set User Element Properties (If Exists)
-  let userElProps = {};
+  const userElProps: any = {};
+  for (let strObj of elementProperties) {
+    if (!strObj) continue;
+    if (!props) continue;
+    if (typeof strObj !== 'string') continue;
 
-  for (const strObj of elementProperties) {
-    console.log('FlatList', { strObj });
+    console.log('BOX', { strObj });
     const parsedObject = JSON5.parse(strObj);
 
     for (const keyProp in parsedObject) {
