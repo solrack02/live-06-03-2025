@@ -1,5 +1,11 @@
 
 import { getCtData } from '../';
+import {
+  getFirestore,
+  getDocs,
+  collection,
+  onSnapshot,
+} from 'firebase/firestore';
 
 type Tprops = {
   args: any;
@@ -14,14 +20,11 @@ export const getDocs = async (props: Tprops) => {
   // ---------- set Caps Inputs
 
   // ---------- set Local Imports
-  const { getFirestore, getDocs, collection, onSnapshot } = await import(
-    '@firebase/firestore'
-  );
 
   // -----------------------------
   // ---------- set Firestore Call
   // -----------------------------
-  const fbInit = getCtData('all.tem.fbInit');
+  const fbInit = getCtData('all.temp.fbInit');
   console.log({ fbInit });
   const fireInit = getFirestore(fbInit);
   const refColl = collection(fireInit, ...arrRefStrings);
