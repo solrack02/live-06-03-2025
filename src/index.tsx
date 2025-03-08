@@ -186,7 +186,7 @@
           const arrUrl = ['https://api.github.com/users']
           const initProps = {"method":"GET"}
           const errFuncs = [()=>{}];
-          const successFuncs = [()=>{}];
+          const successFuncs = [async res => console.log("oi", await res.json())];
           console.log({initProps});
 
           // ---------- set Url Value as a single string
