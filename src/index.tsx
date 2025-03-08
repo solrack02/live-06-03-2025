@@ -181,32 +181,7 @@
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) => {
-          // ---------- set Capsules Inputs
-          const arrUrl = ['https://api.github.com/users']
-          const initProps = {"method":"GET"}
-          const errFuncs = [()=>{}];
-          const successFuncs = [async res => console.log("oi", await res.json())];
-          console.log({initProps});
-
-          // ---------- set Url Value as a single string
-          const url = arrUrl.reduce((prev,curr)=>prev + curr, '')
-          console.log({url});
-
-          // ---------- set Return
-          await fetch(url, initProps)
-          .then((res) => (async () => {
-            for (const currFunc of successFuncs){
-              // console.log({res, currFunc});
-              await currFunc(res, args);
-            }
-          })())
-          .catch(err => (async () => {
-            for (const currFunc of errFuncs){
-              await currFunc(err, args);
-            }
-          })());
-        }]
+ arrFunctions: [()=>{}]
  , trigger: 'on press'
 }})],            childrenItems:[() =><></>],
 
