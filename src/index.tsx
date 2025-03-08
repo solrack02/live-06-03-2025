@@ -183,7 +183,8 @@
  functions.funcGroup({ args, pass:{
  arrFunctions: [(...args) =>
         functions.firebase.deleteDocTool({ args, pass:{
-   arrRefStrings: [''],
+   arrRefStrings: [
+        `tests`, `v7HVcAUiO3IaSkmNERif`],
    arrFuncs: [() => {}],
         }})]
  , trigger: 'on press'
