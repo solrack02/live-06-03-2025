@@ -1216,5 +1216,931 @@
       },
       "capsUserID": "xxx1"
     }
+  },
+
+  "ccc_fireDeleteData": {
+    "capsCodeInfo": {
+      "1": {
+        "capsLabel": {
+          "pt-br": "firestore deleteDoc",
+          "en": "firestore deleteDoc"
+        },
+        "capsDescription": {
+          "pt-br": "",
+          "en": ""
+        },
+        "capsCodeTypes": ["function", "firestore", "deleteDoc"],
+        "capsCodeText": "(...args) =>\n        functions.firebase.deleteDoc({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
+        "capsCodeInputs": {
+          "ccc_fireDeleteData-0": {
+            "capsIptCodeID": "ccc_fireDeleteData-0",
+            "capsIptPosition": "0",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "firestore init path",
+                "en": "firestore init path"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "''",
+              "capsIptCapsTypesToAdd": ["string process"]
+            }
+          },
+          "ccc_fireDeleteData-1": {
+            "capsIptCodeID": "ccc_fireDeleteData-1",
+            "capsIptPosition": "1",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "array firestore reference",
+                "en": "array firestore reference"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "''",
+              "capsIptCapsTypesToAdd": ["string process"]
+            }
+          },
+          "ccc_fireDeleteData-2": {
+            "capsIptCodeID": "ccc_fireDeleteData-2",
+            "capsIptPosition": "2",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "functions return",
+                "en": "functions return"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "() => {}",
+              "capsIptCapsTypesToAdd": [
+                "setVar",
+                "console log",
+                "func Group",
+                "customs"
+              ]
+            }
+          }
+        },
+        "capsCodeVersionID": "1",
+        "capsVersionCreatedAt": {
+          "seconds": 1669821908,
+          "nanoseconds": 764000000
+        }
+      }
+    },
+    "capsType": "code",
+    "capsDB": {
+      "capsID": "ccc_fireDeleteData",
+      "capsPrjID": "yyy1",
+      "capsCreatedAt": {
+        "seconds": 1669821908,
+        "nanoseconds": 764000000
+      },
+      "capsUserID": "xxx1"
+    }
+  },
+
+  "ccc_fireUpdateDoc": {
+    "capsDB": {
+      "capsPrjID": "yyy1",
+      "capsID": "ccc_fireUpdateDoc",
+      "capsCreatedAt": {
+        "seconds": 1669821908,
+        "nanoseconds": 764000000
+      },
+      "capsUserID": "xxx1"
+    },
+    "capsCodeInfo": {
+      "1": {
+        "capsLabel": {
+          "pt-br": "firestore updateDoc",
+          "en": "firestore updateDoc"
+        },
+        "capsVersionCreatedAt": {
+          "seconds": 1669821908,
+          "nanoseconds": 764000000
+        },
+        "capsCodeTypes": ["function", "firestore", "updateDoc"],
+        "capsCodeVersionID": "1",
+        "capsCodeText": "async (...args) =>\n        functions.firebase.updateDoc({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrPathData: [!#!path to data!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
+        "capsDescription": {
+          "pt-br": "",
+          "en": ""
+        },
+        "capsCodeInputs": {
+          "ccc_fireUpdateDoc-0": {
+            "capsIptCodeID": "ccc_fireUpdateDoc-0",
+            "capsIptPosition": "0",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "firestore init path",
+                "en": "firestore init path"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "'noPath'",
+              "capsIptCapsTypesToAdd": ["string process"]
+            }
+          },
+          "ccc_fireUpdateDoc-1": {
+            "capsIptCodeID": "ccc_fireUpdateDoc-1",
+            "capsIptPosition": "1",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "array firestore reference",
+                "en": "array firestore reference"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "'noPath'",
+              "capsIptCapsTypesToAdd": ["string process"]
+            }
+          },
+          "ccc_fireUpdateDoc-2": {
+            "capsIptCodeID": "ccc_fireUpdateDoc-2",
+            "capsIptPosition": "2",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "path data to update",
+                "en": "path data to update"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "'noPath'",
+              "capsIptCapsTypesToAdd": ["string process"]
+            }
+          },
+          "ccc_fireUpdateDoc-3": {
+            "capsIptCodeID": "ccc_fireUpdateDoc-3",
+            "capsIptPosition": "3",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "functions return",
+                "en": "functions return"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "() => {}",
+              "capsIptCapsTypesToAdd": [
+                "setVar",
+                "console log",
+                "func Group",
+                "customs"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "capsType": "code"
+  },
+
+  "ccc_fireGetDocs": {
+    "capsDB": {
+      "capsUserID": "xxx1",
+      "capsID": "ccc_fireGetDocs",
+      "capsCreatedAt": {
+        "seconds": 1669821908,
+        "nanoseconds": 764000000
+      },
+      "capsPrjID": "yyy1"
+    },
+    "capsCodeInfo": {
+      "1": {
+        "capsLabel": {
+          "pt-br": "firestore getDocs",
+          "en": "firestore getDocs"
+        },
+        "capsVersionCreatedAt": {
+          "seconds": 1669821908,
+          "nanoseconds": 764000000
+        },
+        "capsCodeTypes": ["function", "firestore", "getDocs"],
+        "capsCodeVersionID": "1",
+        "capsCodeText": "async (...args) =>\n        functions.firebase.getDocs({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
+        "capsDescription": {
+          "pt-br": ""
+        },
+        "capsCodeInputs": {
+          "ccc_fireGetDocs-0": {
+            "capsIptCodeID": "ccc_fireGetDocs-0",
+            "capsIptPosition": "0",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "firestore init path",
+                "en": "firestore init path"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "'noPath'",
+              "capsIptCapsTypesToAdd": ["string process"]
+            }
+          },
+          "ccc_fireGetDocs-1": {
+            "capsIptCodeID": "ccc_fireGetDocs-1",
+            "capsIptPosition": "1",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "array firestore reference",
+                "en": "array firestore reference"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "'noPath'",
+              "capsIptCapsTypesToAdd": ["string process"]
+            }
+          },
+          "ccc_fireGetDocs-2": {
+            "capsIptCodeID": "ccc_fireGetDocs-2",
+            "capsIptPosition": "2",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "functions return",
+                "en": "functions return"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "()=>{}",
+              "capsIptCapsTypesToAdd": [
+                "setVar",
+                "console log",
+                "condition",
+                "func Group",
+                "customs"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "capsType": "code"
+  },
+
+  "ccc_fireGetDoc": {
+    "capsDB": {
+      "capsUserID": "xxx1",
+      "capsID": "ccc_fireGetDoc",
+      "capsCreatedAt": {
+        "seconds": 1669821908,
+        "nanoseconds": 764000000
+      },
+      "capsPrjID": "yyy1"
+    },
+    "capsCodeInfo": {
+      "1": {
+        "capsLabel": {
+          "pt-br": "firestore getDoc (single doc)",
+          "en": "firestore getDoc (single doc)"
+        },
+        "capsVersionCreatedAt": {
+          "seconds": 1669821908,
+          "nanoseconds": 764000000
+        },
+        "capsCodeTypes": ["function", "firestore", "getDoc"],
+        "capsCodeVersionID": "1",
+        "capsCodeText": "async (...args) =>\n        functions.firebase.getDoc({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
+        "capsDescription": {
+          "pt-br": "",
+          "en": ""
+        },
+        "capsCodeInputs": {
+          "ccc_fireGetDoc-0": {
+            "capsIptCodeID": "ccc_fireGetDoc-0",
+            "capsIptPosition": "0",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "firestore init path",
+                "en": "firestore init path"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "'noPath'",
+              "capsIptCapsTypesToAdd": ["string process"]
+            }
+          },
+          "ccc_fireGetDoc-1": {
+            "capsIptCodeID": "ccc_fireGetDoc-1",
+            "capsIptPosition": "1",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "array firestore reference",
+                "en": "array firestore reference"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "'noPath'",
+              "capsIptCapsTypesToAdd": ["string process"]
+            }
+          },
+          "ccc_fireGetDoc-2": {
+            "capsIptCodeID": "ccc_fireGetDoc-2",
+            "capsIptPosition": "2",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "functions return",
+                "en": "functions return"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "()=>{}",
+              "capsIptCapsTypesToAdd": [
+                "setVar",
+                "console log",
+                "condition",
+                "func Group"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "capsType": "code"
+  },
+
+  "ccc_fireSetDoc": {
+    "capsDB": {
+      "capsUserID": "xxx1",
+      "capsID": "ccc_fireSetDoc",
+      "capsCreatedAt": {
+        "seconds": 1669821908,
+        "nanoseconds": 764000000
+      },
+      "capsPrjID": "yyy1"
+    },
+    "capsCodeInfo": {
+      "1": {
+        "capsLabel": {
+          "pt-br": "firestore setDoc",
+          "en": "firestore setDoc"
+        },
+        "capsVersionCreatedAt": {
+          "seconds": 1669821908,
+          "nanoseconds": 764000000
+        },
+        "capsCodeTypes": ["function", "firestore", "setDoc"],
+        "capsCodeVersionID": "1",
+        "capsCodeText": "async (...args) =>\n        functions.firebase.setDoc({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrPathData: [!#!path to data!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
+        "capsDescription": {
+          "pt-br": "",
+          "en": ""
+        },
+        "capsCodeInputs": {
+          "ccc_fireSetDoc-0": {
+            "capsIptCodeID": "ccc_fireSetDoc-0",
+            "capsIptPosition": "0",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "firestore init path",
+                "en": "firestore init path"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "'noPath'",
+              "capsIptCapsTypesToAdd": ["string process"]
+            }
+          },
+          "ccc_fireSetDoc-1": {
+            "capsIptCodeID": "ccc_fireSetDoc-1",
+            "capsIptPosition": "1",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "array firestore reference",
+                "en": "array firestore reference"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "'noPath'",
+              "capsIptCapsTypesToAdd": ["string process"]
+            }
+          },
+          "ccc_fireSetDoc-2": {
+            "capsIptCodeID": "ccc_fireSetDoc-2",
+            "capsIptPosition": "2",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "data to set",
+                "en": "data to set"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "'noPath'",
+              "capsIptCapsTypesToAdd": ["string process"]
+            }
+          },
+          "ccc_fireSetDoc-3": {
+            "capsIptCodeID": "ccc_fireSetDoc-3",
+            "capsIptPosition": "3",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "functions return",
+                "en": "functions return"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "()=>{}",
+              "capsIptCapsTypesToAdd": ["setVar", "console log", "func Group"]
+            }
+          }
+        }
+      }
+    },
+    "capsType": "code"
+  },
+
+  "ccc_fireUpload": {
+    "capsCodeInfo": {
+      "1": {
+        "capsLabel": {
+          "pt-br": "firestore upload",
+          "en": "firestore upload"
+        },
+        "capsDescription": {
+          "pt-br": ""
+        },
+        "capsCodeTypes": ["function", "firestore", "upload"],
+        "capsCodeText": "async (...args) =>\n        functions.firebase.uploadFile({ args, pass:{\n            fbInit: [!#!firestore init obj!#!],\n            arrFiles: [!#!array files!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
+        "capsCodeInputs": {
+          "ccc_fireUpload-0": {
+            "capsIptCodeID": "ccc_fireUpload-0",
+            "capsIptPosition": "0",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "firestore init",
+                "en": "firestore init"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "''",
+              "capsIptCapsTypesToAdd": ["string process"]
+            }
+          },
+          "ccc_fireUpload-1": {
+            "capsIptCodeID": "ccc_fireUpload-1",
+            "capsIptPosition": "1",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "array de arquivos",
+                "en": "array de arquivos"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "''",
+              "capsIptCapsTypesToAdd": ["string process"]
+            }
+          },
+          "ccc_fireUpload-3": {
+            "capsIptCodeID": "ccc_fireUpload-3",
+            "capsIptPosition": "3",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "functions return",
+                "en": "functions return"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "() => {}",
+              "capsIptCapsTypesToAdd": ["function", "customs"]
+            }
+          }
+        },
+        "capsCodeVersionID": "1",
+        "capsVersionCreatedAt": {
+          "seconds": 1669821908,
+          "nanoseconds": 764000000
+        }
+      }
+    },
+    "capsType": "code",
+    "capsDB": {
+      "capsID": "ccc_fireUpload",
+      "capsPrjID": "yyy1",
+      "capsCreatedAt": {
+        "seconds": 1669821908,
+        "nanoseconds": 764000000
+      },
+      "capsUserID": "xxx1"
+    }
+  },
+
+  "ccc_fireWhereConds": {
+    "capsCodeInfo": {
+      "1": {
+        "capsLabel": {
+          "pt-br": "firestore where condition",
+          "en": "firestore where condition"
+        },
+        "capsDescription": {
+          "pt-br": "Usada para \"pegar\" documentos específicos de acordo com a instrução fornecida."
+        },
+        "capsCodeTypes": ["where conditions"],
+        "capsCodeText": "(...args) =>\n        functions.firebase.whereConds({ args, pass:{\n          arrStrings: [!#!where params!#!],\n        }})",
+        "capsCodeInputs": {
+          "ccc_fireWhereConds-0": {
+            "capsIptCodeID": "ccc_fireWhereConds-0",
+            "capsIptPosition": "0",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "where condition",
+                "en": "where condition"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": " ",
+              "capsIptCapsTypesToAdd": ["string process"]
+            }
+          }
+        },
+        "capsCodeVersionID": "1",
+        "capsVersionCreatedAt": {
+          "seconds": 1669821908,
+          "nanoseconds": 764000000
+        }
+      }
+    },
+    "capsType": "code",
+    "capsDB": {
+      "capsID": "ccc_fireWhereConds",
+      "capsPrjID": "yyy1",
+      "capsCreatedAt": {
+        "seconds": 1669821908,
+        "nanoseconds": 764000000
+      },
+      "capsUserID": "xxx1"
+    }
+  },
+
+  "ccc_fireWhere": {
+    "capsCodeInfo": {
+      "1": {
+        "capsLabel": {
+          "pt-br": "firestore where",
+          "en": "firestore where"
+        },
+        "capsDescription": {
+          "pt-br": "Usada para \"pegar\" documentos específicos de acordo com a instrução fornecida.",
+          "en": ""
+        },
+        "capsCodeTypes": ["customs", "function", "firestore", "where"],
+        "capsCodeText": "async (...args) =>\n        functions.firebase.where({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrWhere: [!#!where params!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
+        "capsCodeInputs": {
+          "ccc_fireWhere-0": {
+            "capsIptCodeID": "ccc_fireWhere-0",
+            "capsIptPosition": "0",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "firestore init path",
+                "en": "firestore init path"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "''",
+              "capsIptCapsTypesToAdd": ["string process"]
+            }
+          },
+          "ccc_fireWhere-1": {
+            "capsIptCodeID": "ccc_fireWhere-1",
+            "capsIptPosition": "1",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "array firestore references",
+                "en": "array firestore references"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "''",
+              "capsIptCapsTypesToAdd": ["string process"]
+            }
+          },
+          "ccc_fireWhere-2": {
+            "capsIptCodeID": "ccc_fireWhere-2",
+            "capsIptPosition": "2",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "where params",
+                "en": "where params"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "[() => ({ field: 'xx', operator: '==', value: 'xx' })]",
+              "capsIptCapsTypesToAdd": ["where conditions"]
+            }
+          },
+          "ccc_fireWhere-3": {
+            "capsIptCodeID": "ccc_fireWhere-3",
+            "capsIptPosition": "3",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "functions return",
+                "en": "functions return"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "() => {}",
+              "capsIptCapsTypesToAdd": [
+                "setVar",
+                "console log",
+                "goTo",
+                "condition",
+                "func Group",
+                "customs"
+              ]
+            }
+          }
+        },
+        "capsCodeVersionID": "1",
+        "capsVersionCreatedAt": {
+          "seconds": 1669821908,
+          "nanoseconds": 764000000
+        }
+      }
+    },
+    "capsType": "code",
+    "capsDB": {
+      "capsID": "ccc_fireWhere",
+      "capsPrjID": "yyy1",
+      "capsCreatedAt": {
+        "seconds": 1669821908,
+        "nanoseconds": 764000000
+      },
+      "capsUserID": "xxx1"
+    }
+  },
+
+  "ccc_fireInit": {
+    "capsDB": {
+      "capsUserID": "xxx1",
+      "capsID": "ccc_fireInit",
+      "capsCreatedAt": {
+        "seconds": 1669821908,
+        "nanoseconds": 764000000
+      },
+      "capsPrjID": "yyy1"
+    },
+    "capsCodeInfo": {
+      "1": {
+        "capsLabel": {
+          "pt-br": "init firebase",
+          "en": "init firebase"
+        },
+        "capsVersionCreatedAt": {
+          "seconds": 1669821908,
+          "nanoseconds": 764000000
+        },
+        "capsCodeTypes": ["function", "fbInit"],
+        "capsCodeVersionID": "1",
+        "capsCodeText": "async (...args) =>\n        functions.firebase.fireInit({ args, pass:{\n          fbConfig: !#!FB Variable Path!#!,\n          arrFuncs: [!#!Variable Path To Save!#!]\n        }})",
+        "capsDescription": {
+          "pt-br": "xxx"
+        },
+        "capsCodeInputs": {
+          "ccc_fireInit-0": {
+            "capsIptCodeID": "ccc_fireInit-0",
+            "capsIptPosition": "0",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "FB Variable Path",
+                "en": "FB Variable Path"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "'noPath'",
+              "capsIptCapsTypesToAdd": ["string process"]
+            }
+          },
+          "ccc_fireInit-1": {
+            "capsIptCodeID": "ccc_fireInit-1",
+            "capsIptPosition": "1",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "Variable Path To Save",
+                "en": "Variable Path To Save"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "()=>{}",
+              "capsIptCapsTypesToAdd": ["setVar"]
+            }
+          }
+        }
+      }
+    },
+    "capsType": "code"
+  },
+
+  "ccc_fetch_B": {
+    "capsCodeInfo": {
+      "1": {
+        "capsLabel": {
+          "pt-br": "fetch",
+          "en": "fetch"
+        },
+        "capsDescription": {
+          "pt-br": "",
+          "en": ""
+        },
+        "capsCodeTypes": ["function", "fetch"],
+        "capsCodeText": "async (...args) => {\n          // ---------- set Capsules Inputs\n          const arrUrl = [!#!url!#!]\n          const initProps = {!#!initial properties!#!}\n          const errFuncs = [!#!callback error!#!];\n          const successFuncs = [!#!callback response!#!];\n          console.log({initProps});\n\n          // ---------- set Url Value as a single string\n          const url = arrUrl.reduce((prev,curr)=>prev + curr, '')\n          console.log({url});\n\n          // ---------- set Return\n          await fetch(url, initProps)\n          .then((res) => (async () => {\n            for (const currFunc of successFuncs){\n              // console.log({res, currFunc});\n              await currFunc(res, args);\n            }\n          })())\n          .catch(err => (async () => {\n            for (const currFunc of errFuncs){\n              await currFunc(err, args);\n            }\n          })());\n        }",
+        "capsCodeInputs": {
+          "ccc_fetch_B-0": {
+            "capsIptCodeID": "ccc_fetch_B-0",
+            "capsIptPosition": "0",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "url",
+                "en": "url"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "'https://api.github.com/users'",
+              "capsIptCapsTypesToAdd": [
+                "free value",
+                "join strings value",
+                "string value"
+              ]
+            }
+          },
+          "ccc_fetch_B-1": {
+            "capsIptCodeID": "ccc_fetch_B-1",
+            "capsIptPosition": "1",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "propriedades iniciais",
+                "en": "initial properties"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "\"method\":\"GET\"",
+              "capsIptCapsTypesToAdd": ["propValue"]
+            }
+          },
+          "ccc_fetch_B-2": {
+            "capsIptCodeID": "ccc_fetch_B-2",
+            "capsIptPosition": "2",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "erro de callback",
+                "en": "callback error"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "()=>{}",
+              "capsIptCapsTypesToAdd": ["fetch response"]
+            }
+          },
+          "ccc_fetch_B-3": {
+            "capsIptCodeID": "ccc_fetch_B-3",
+            "capsIptPosition": "3",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "resposta de callback",
+                "en": "callback response"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "()=>{}",
+              "capsIptCapsTypesToAdd": ["fetch response"]
+            }
+          }
+        },
+        "capsCodeVersionID": "1",
+        "capsVersionCreatedAt": {
+          "seconds": 1669821908,
+          "nanoseconds": 764000000
+        }
+      }
+    },
+    "capsType": "code",
+    "capsDB": {
+      "capsID": "ccc_fetch_B",
+      "capsPrjID": "yyy1",
+      "capsCreatedAt": {
+        "seconds": 1669821908,
+        "nanoseconds": 764000000
+      },
+      "capsUserID": "xxx1"
+    }
   }
 }
