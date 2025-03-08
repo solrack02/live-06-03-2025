@@ -1230,7 +1230,7 @@
           "en": ""
         },
         "capsCodeTypes": ["function", "firestore", "deleteDoc"],
-        "capsCodeText": "(...args) =>\n        functions.firebase.deleteDoc({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
+        "capsCodeText": "(...args) =>\n        functions.firebase.deleteDocTool({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
         "capsCodeInputs": {
           "ccc_fireDeleteData-0": {
             "capsIptCodeID": "ccc_fireDeleteData-0",
@@ -1333,7 +1333,7 @@
         },
         "capsCodeTypes": ["function", "firestore", "updateDoc"],
         "capsCodeVersionID": "1",
-        "capsCodeText": "async (...args) =>\n        functions.firebase.updateDoc({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrPathData: [!#!path to data!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
+        "capsCodeText": "async (...args) =>\n        functions.firebase.updateDocTool({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrPathData: [!#!path to data!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
         "capsDescription": {
           "pt-br": "",
           "en": ""
@@ -1444,7 +1444,7 @@
         },
         "capsCodeTypes": ["function", "firestore", "getDocs"],
         "capsCodeVersionID": "1",
-        "capsCodeText": "async (...args) =>\n        functions.firebase.getDocs({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
+        "capsCodeText": "async (...args) =>\n        functions.firebase.getDocsTool({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
         "capsDescription": {
           "pt-br": ""
         },
@@ -1537,7 +1537,7 @@
         },
         "capsCodeTypes": ["function", "firestore", "getDoc"],
         "capsCodeVersionID": "1",
-        "capsCodeText": "async (...args) =>\n        functions.firebase.getDoc({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
+        "capsCodeText": "async (...args) =>\n        functions.firebase.getDocTool({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
         "capsDescription": {
           "pt-br": "",
           "en": ""
@@ -1630,7 +1630,7 @@
         },
         "capsCodeTypes": ["function", "firestore", "setDoc"],
         "capsCodeVersionID": "1",
-        "capsCodeText": "async (...args) =>\n        functions.firebase.setDoc({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrPathData: [!#!path to data!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
+        "capsCodeText": "async (...args) =>\n        functions.firebase.setDocTool({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrPathData: [!#!path to data!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
         "capsDescription": {
           "pt-br": "",
           "en": ""
@@ -1725,7 +1725,7 @@
           "pt-br": ""
         },
         "capsCodeTypes": ["function", "firestore", "upload"],
-        "capsCodeText": "async (...args) =>\n        functions.firebase.uploadFile({ args, pass:{\n            fbInit: [!#!firestore init obj!#!],\n            arrFiles: [!#!array files!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
+        "capsCodeText": "async (...args) =>\n        functions.firebase.uploadFileTool({ args, pass:{\n            fbInit: [!#!firestore init obj!#!],\n            arrFiles: [!#!array files!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
         "capsCodeInputs": {
           "ccc_fireUpload-0": {
             "capsIptCodeID": "ccc_fireUpload-0",
