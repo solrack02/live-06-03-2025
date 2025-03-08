@@ -1,6 +1,6 @@
 
 // ---------- import Packs
-import { getCtData } from '../';
+import { getCtData } from '../../project';
 import { doc } from 'firebase/firestore';
 import { getFirestore, onSnapshot } from 'firebase/firestore';
 

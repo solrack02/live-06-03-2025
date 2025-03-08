@@ -1,5 +1,5 @@
 
-import { getCtData } from '../';
+import { getCtData } from '../../project';
 import {
   getFirestore,
   collection,

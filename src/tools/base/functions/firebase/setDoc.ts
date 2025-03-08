@@ -1,6 +1,6 @@
 
 // ---------- import Local Tools
-import { getCtData } from '../';
+import { getCtData } from '../../project';
 import {
   getFirestore,
   doc,
