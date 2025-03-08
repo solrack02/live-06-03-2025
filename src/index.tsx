@@ -181,12 +181,7 @@
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
-        functions.firebase.getDocTool({ args, pass:{
-  arrRefStrings: [
-        `tests`, `pLJSOStpCVaE5ttqr5UF`],
-            arrFuncs: [()=>{}],
-        }})]
+ arrFunctions: [()=>{}]
  , trigger: 'on press'
 }})],            childrenItems:[() =><></>],
 
