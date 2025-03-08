@@ -185,7 +185,7 @@
         functions.firebase.setDocTool({ args, pass:{
   arrRefStrings: [`tests`],
             arrPathData: [`all.dataToSet`],
-            arrFuncs: [()=>{}],
+            arrFuncs: [argDoc => console.log({argDoc})],
         }})]
  , trigger: 'on press'
 }})],            childrenItems:[() =><></>],
