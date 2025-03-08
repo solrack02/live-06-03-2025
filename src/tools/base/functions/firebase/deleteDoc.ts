@@ -1,5 +1,5 @@
 
-import { getCtData } from '../';
+import { getCtData } from '../../project';
 import { getFirestore, doc, deleteDoc } from 'firebase/firestore';
 
 export const css1 =
