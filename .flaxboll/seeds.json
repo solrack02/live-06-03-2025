@@ -1310,7 +1310,7 @@
         },
         "capsCodeTypes": ["function", "firestore", "updateDoc"],
         "capsCodeVersionID": "1",
-        "capsCodeText": "async (...args) =>\n        functions.firebase.updateDocTool({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrPathData: [!#!path to data!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
+        "capsCodeText": "async (...args) =>\n        functions.firebase.updateDocTool({ args, pass:{\n   arrRefStrings: [!#!array firestore reference!#!],\n            arrPathData: [!#!path to data!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
         "capsDescription": {
           "pt-br": "",
           "en": ""
@@ -1323,8 +1323,8 @@
             "capsIptType": "capsules",
             "capsIptCapsInfo": {
               "capsIptCapsLabel": {
-                "pt-br": "firestore init path",
-                "en": "firestore init path"
+                "pt-br": "array firestore reference",
+                "en": "array firestore reference"
               },
               "capsIptCapsDescription": {
                 "pt-br": "",
@@ -1341,8 +1341,8 @@
             "capsIptType": "capsules",
             "capsIptCapsInfo": {
               "capsIptCapsLabel": {
-                "pt-br": "array firestore reference",
-                "en": "array firestore reference"
+                "pt-br": "path data to update",
+                "en": "path data to update"
               },
               "capsIptCapsDescription": {
                 "pt-br": "",
@@ -1359,24 +1359,6 @@
             "capsIptType": "capsules",
             "capsIptCapsInfo": {
               "capsIptCapsLabel": {
-                "pt-br": "path data to update",
-                "en": "path data to update"
-              },
-              "capsIptCapsDescription": {
-                "pt-br": "",
-                "en": ""
-              },
-              "capsIptCapsDfCode": "'noPath'",
-              "capsIptCapsTypesToAdd": ["string process"]
-            }
-          },
-          "ccc_fireUpdateDoc-3": {
-            "capsIptCodeID": "ccc_fireUpdateDoc-3",
-            "capsIptPosition": "3",
-            "capsIptRemoved": false,
-            "capsIptType": "capsules",
-            "capsIptCapsInfo": {
-              "capsIptCapsLabel": {
                 "pt-br": "functions return",
                 "en": "functions return"
               },
@@ -1388,8 +1370,7 @@
               "capsIptCapsTypesToAdd": [
                 "setVar",
                 "console log",
-                "func Group",
-                "customs"
+                "custom capsule"
               ]
             }
           }
