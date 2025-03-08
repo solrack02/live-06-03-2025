@@ -68,7 +68,8 @@
 
             args,
           }}/>
-        , (...args:any) => <Elements.FlatList2 pass={{
+        , 
+        (...args:any) => <Elements.FlatList2 pass={{
           elementProperties: [
             {}
           ],
@@ -129,6 +130,10 @@
           ],
 
       styles:['{ flex: 1, backgroundColor: "yellow", width: "100%", height: 60 }'],    args,
+        }}/>, (...args:any) => <Elements.Loader pass={{
+            size: "small",
+            color: ' ',
+            args,
         }}/>],
 
           functions:[()=>{}],
