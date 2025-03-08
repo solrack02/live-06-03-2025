@@ -132,7 +132,7 @@
       styles:['{ flex: 1, backgroundColor: "yellow", width: "100%", height: 60 }'],    args,
         }}/>, (...args:any) => <Elements.Loader pass={{
             size: "small",
-            color: ' ',
+            color: 'black',
             args,
         }}/>],
 
