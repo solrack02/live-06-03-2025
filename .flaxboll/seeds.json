@@ -1985,9 +1985,9 @@
           "seconds": 1669821908,
           "nanoseconds": 764000000
         },
-        "capsCodeTypes": ["function", "fbInit"],
+        "capsCodeTypes": ["fbInit"],
         "capsCodeVersionID": "1",
-        "capsCodeText": "async (...args) =>\n        functions.firebase.fireInit({ args, pass:{\n          fbConfig: !#!FB Variable Path!#!,\n          arrFuncs: [!#!Variable Path To Save!#!]\n        }})",
+        "capsCodeText": "async (...args) =>\n  functions.firebase.fireInit({ args, pass:{\n   fbConfig: !#!FB Variable Path!#!,\n\n        }})",
         "capsDescription": {
           "pt-br": "xxx"
         },
@@ -2008,24 +2008,6 @@
               },
               "capsIptCapsDfCode": "'noPath'",
               "capsIptCapsTypesToAdd": ["string process"]
-            }
-          },
-          "ccc_fireInit-1": {
-            "capsIptCodeID": "ccc_fireInit-1",
-            "capsIptPosition": "1",
-            "capsIptRemoved": false,
-            "capsIptType": "capsules",
-            "capsIptCapsInfo": {
-              "capsIptCapsLabel": {
-                "pt-br": "Variable Path To Save",
-                "en": "Variable Path To Save"
-              },
-              "capsIptCapsDescription": {
-                "pt-br": "",
-                "en": ""
-              },
-              "capsIptCapsDfCode": "()=>{}",
-              "capsIptCapsTypesToAdd": ["setVar"]
             }
           }
         }
