@@ -1475,7 +1475,7 @@
         },
         "capsCodeTypes": ["function", "firestore", "getDoc"],
         "capsCodeVersionID": "1",
-        "capsCodeText": "async (...args) =>\n        functions.firebase.getDocTool({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
+        "capsCodeText": "async (...args) =>\n        functions.firebase.getDocTool({ args, pass:{\n  arrRefStrings: [!#!array firestore reference!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
         "capsDescription": {
           "pt-br": "",
           "en": ""
@@ -1488,8 +1488,8 @@
             "capsIptType": "capsules",
             "capsIptCapsInfo": {
               "capsIptCapsLabel": {
-                "pt-br": "firestore init path",
-                "en": "firestore init path"
+                "pt-br": "array firestore reference",
+                "en": "array firestore reference"
               },
               "capsIptCapsDescription": {
                 "pt-br": "",
@@ -1506,24 +1506,6 @@
             "capsIptType": "capsules",
             "capsIptCapsInfo": {
               "capsIptCapsLabel": {
-                "pt-br": "array firestore reference",
-                "en": "array firestore reference"
-              },
-              "capsIptCapsDescription": {
-                "pt-br": "",
-                "en": ""
-              },
-              "capsIptCapsDfCode": "'noPath'",
-              "capsIptCapsTypesToAdd": ["string process"]
-            }
-          },
-          "ccc_fireGetDoc-2": {
-            "capsIptCodeID": "ccc_fireGetDoc-2",
-            "capsIptPosition": "2",
-            "capsIptRemoved": false,
-            "capsIptType": "capsules",
-            "capsIptCapsInfo": {
-              "capsIptCapsLabel": {
                 "pt-br": "functions return",
                 "en": "functions return"
               },
@@ -1535,8 +1517,7 @@
               "capsIptCapsTypesToAdd": [
                 "setVar",
                 "console log",
-                "condition",
-                "func Group"
+                "custom capsule"
               ]
             }
           }
