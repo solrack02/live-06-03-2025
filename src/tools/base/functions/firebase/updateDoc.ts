@@ -35,7 +35,7 @@ export const updateDocTool = async (props: Tprops) => {
   // -----------------------------
   // ---------- set Firestore Call
   // -----------------------------
-  const fbInit = getCtData('all.temp.fbInit');
+  const fbInit = getCtData('all.temp.fireInit');
   console.log(fbInit);
   const fireInit: any = getFirestore(fbInit);
   console.log({ arrRefStrings });
