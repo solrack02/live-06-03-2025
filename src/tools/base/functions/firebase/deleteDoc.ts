@@ -1,4 +1,7 @@
 
+import { getCtData } from '../';
+import { getFirestore, doc, deleteDoc } from 'firebase/firestore';
+
 export const css1 =
   'color: red; background-color: black; font-size: 11px; padding: 2px 6px; border-radius: 3px';
 export const css2 =
@@ -7,24 +10,23 @@ export const css2 =
 type Tprops = {
   args: any;
   pass: {
-    fbInit: any;
     arrRefStrings: string[];
     arrPathData: string[];
     arrFuncs: any[];
   };
 };
 
-export const deleteDoc = async (props: Tprops) => {
+export const deleteDocTool = async (props: Tprops) => {
   // ---------- set Props
   const { args, pass } = props;
-  const { fbInit, arrRefStrings, arrFuncs } = pass;
+  const { arrRefStrings, arrFuncs } = pass;
   // ---------- set Local Imports
-  const { getFirestore, doc, deleteDoc } = await import('@firebase/firestore');
 
   // -----------------------------
   // -------- set Firestore Call 1
   // -----------------------------
-  const fireInit: any = getFirestore(fbInit[0]);
+  const fbInit = getCtData('all.temp.fbInit');
+  const fireInit: any = getFirestore(fbInit);
   const refColl = doc(fireInit, ...arrRefStrings);
   await deleteDoc(refColl);
 
@@ -39,4 +41,3 @@ export const deleteDoc = async (props: Tprops) => {
   console.log('%cdeleteDoc ok', css1);
   console.log('%cReferencia da Exclusão', css2, arrRefStrings);
 };
-

@@ -1,25 +1,25 @@
 
 // ---------- import Packs
-import { doc } from '@firebase/firestore';
+import { getCtData } from '../';
+import { doc } from 'firebase/firestore';
+import { getFirestore, getDocs, onSnapshot } from '@firebase/firestore';
 
 type Tprops = {
   args: any;
-  pass: { fbInit: any; arrRefStrings: string[]; arrFuncs: any[] };
+  pass: { arrRefStrings: string[]; arrFuncs: any[] };
 };
 
-export const getDoc = async (props: Tprops) => {
+export const getDocTool = async (props: Tprops) => {
   // ---------- set Props
   const { args, pass } = props;
-  const { fbInit, arrRefStrings, arrFuncs } = pass;
+  const { arrRefStrings, arrFuncs } = pass;
 
   // ---------- set Local Imports
-  const { getFirestore, getDocs, collection, onSnapshot } = await import(
-    '@firebase/firestore'
-  );
 
   // -----------------------------
   // ---------- set Firestore Call
   // -----------------------------
+  const fbInit = getCtData('all.temp.fbInit');
   console.log({ fbInit });
   console.log({ arrRefStrings });
   const fireInit = getFirestore(fbInit[0]);
@@ -36,4 +36,3 @@ export const getDoc = async (props: Tprops) => {
     for (const currFunc of arrFuncs) currFunc(args, Doc);
   });
 };
-

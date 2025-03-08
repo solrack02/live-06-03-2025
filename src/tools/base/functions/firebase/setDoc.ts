@@ -1,6 +1,13 @@
 
 // ---------- import Local Tools
-import { getCtData } from '../../project';
+import { getCtData } from '../';
+import {
+  getFirestore,
+  doc,
+  setDoc,
+  collection,
+  Timestamp,
+} from 'firebase/firestore';
 
 export const css1 =
   'color: green; background-color: black; font-size: 11px; padding: 2px 6px; border-radius: 3px';
@@ -10,29 +17,26 @@ export const css2 =
 type Tprops = {
   args: any;
   pass: {
-    fbInit: any;
     arrRefStrings: string[];
     arrPathData: string[];
     arrFuncs: any[];
   };
 };
 
-export const setDoc = async (props: Tprops) => {
+export const setDocTool = async (props: Tprops) => {
   // ---------- set Props
   const { args, pass } = props;
-  const { fbInit, arrRefStrings, arrPathData, arrFuncs } = pass;
+  const { arrRefStrings, arrPathData, arrFuncs } = pass;
 
   // ---------- set Local Imports
-  const { getFirestore, doc, setDoc, collection, Timestamp } = await import(
-    '@firebase/firestore'
-  );
 
   // ---------- set Caps Inputs
 
   // -----------------------------
   // ---------- set Firestore Call
   // -----------------------------
-  const fireInit = getFirestore(fbInit[0]);
+  const fbInit = getCtData('all.temp.fbInit');
+  const fireInit = getFirestore(fbInit);
   const refColl = collection(fireInit, ...arrRefStrings);
   const refDoc = doc(refColl);
 
@@ -61,4 +65,3 @@ export const setDoc = async (props: Tprops) => {
 
   return dataToSet;
 };
-

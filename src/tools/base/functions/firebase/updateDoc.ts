@@ -1,5 +1,12 @@
 
 // ---------- import Local Tools
+import {
+  getFirestore,
+  doc,
+  updateDoc,
+  collection,
+  Timestamp,
+} from 'firebase/firestore';
 import { getCtData } from '../../project';
 
 export const css1 =
@@ -10,31 +17,27 @@ export const css2 =
 type Tprops = {
   args: any;
   pass: {
-    fbInit: any[];
     arrRefStrings: string[];
     arrPathData: string[];
     arrFuncs: any[];
   };
 };
 
-export const updateDoc = async (props: Tprops) => {
+export const updateDocTool = async (props: Tprops) => {
   // ---------- set Props
   const { args, pass } = props;
-  const { fbInit, arrRefStrings, arrPathData, arrFuncs } = pass;
+  const { arrRefStrings, arrPathData, arrFuncs } = pass;
 
   // ---------- set Local Imports
-  const { getFirestore, doc, updateDoc, collection, Timestamp } = await import(
-    '@firebase/firestore'
-  );
 
   // ---------- set Caps Inputs
 
   // -----------------------------
   // ---------- set Firestore Call
   // -----------------------------
-  console.log({ fbInit });
-  console.log(fbInit[0]);
-  const fireInit: any = getFirestore(fbInit[0]);
+  const fbInit = getCtData('all.temp.fbInit');
+  console.log(fbInit);
+  const fireInit: any = getFirestore(fbInit);
   console.log({ arrRefStrings });
   const refColl = doc(fireInit, ...arrRefStrings);
 
@@ -69,4 +72,3 @@ export const updateDoc = async (props: Tprops) => {
 
   return dataToUpdate;
 };
-
