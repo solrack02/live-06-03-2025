@@ -1,10 +1,6 @@
 
 import { getCtData } from '../../project';
-import {
-  getFirestore,
-  collection,
-  onSnapshot,
-} from 'firebase/firestore';
+import { getFirestore, collection, onSnapshot } from 'firebase/firestore';
 
 type Tprops = {
   args: any;
@@ -23,7 +19,7 @@ export const getDocsTool = async (props: Tprops) => {
   // -----------------------------
   // ---------- set Firestore Call
   // -----------------------------
-  const fbInit = getCtData('all.temp.fbInit');
+  const fbInit = getCtData('all.temp.fireInit');
   console.log({ fbInit });
   const fireInit = getFirestore(fbInit);
   const refColl = collection(fireInit, ...arrRefStrings);
