@@ -181,13 +181,7 @@
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
-        functions.firebase.updateDocTool({ args, pass:{
-   arrRefStrings: [
-        `tests`, `pLJSOStpCVaE5ttqr5UF`],
-            arrPathData: [`all.dataToSet`],
-            arrFuncs: [() => {}],
-        }})]
+ arrFunctions: [()=>{}]
  , trigger: 'on press'
 }})],            childrenItems:[() =><></>],
 
