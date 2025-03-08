@@ -786,6 +786,189 @@
     }
   },
 
+  "ccc_loader": {
+    "capsCodeInfo": {
+      "1": {
+        "capsVersionCreatedAt": {
+          "seconds": 1669821908,
+          "nanoseconds": 761000000
+        },
+        "capsCodeVersionID": "1",
+        "capsLabel": {
+          "pt-br": "Loader",
+          "en": "Loader"
+        },
+        "capsDescription": {
+          "pt-br": "",
+          "en": ""
+        },
+        "capsCodeTypes": ["Elemento de Tela", "Loader"],
+        "capsCodeText": "(...args:any) => <Elements.Loader pass={{\n            size: \"!#!tamanho!#!\",\n            color: !#!cor!#!,\n            args,\n        }}/>",
+        "capsCodeInputs": {
+          "ccc_loader-0": {
+            "capsIptCodeID": "ccc_loader-0",
+            "capsIptPosition": "0",
+            "capsIptRemoved": false,
+            "capsIptType": "text",
+            "capsIptTxtInfo": {
+              "capsIptTxtLabel": {
+                "pt-br": "tamanho",
+                "en": "size"
+              },
+              "capsIptTxtDescription": {
+                "pt-br": "small or large.",
+                "en": "small or large."
+              },
+              "capsIptTxtDfValue": "small"
+            }
+          },
+          "ccc_loader-1": {
+            "capsIptPosition": "1",
+            "capsIptCodeID": "ccc_loader-1",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "cor",
+                "en": "color"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsTypesToAdd": ["string process"],
+              "capsIptCapsDfCode": "' '"
+            }
+          }
+        }
+      }
+    },
+    "capsType": "code",
+    "capsDB": {
+      "capsID": "ccc_loader",
+      "capsPrjID": "ZOqi3kZm6c7XjObC79xk",
+      "capsUserID": "usrn5e3jr2CvvnDpHigA",
+      "capsCreatedAt": {
+        "seconds": 1669821908,
+        "nanoseconds": 761000000
+      }
+    }
+  },
+
+  "ccc_textInputEdit_C": {
+    "capsCodeInfo": {
+      "1": {
+        "capsLabel": {
+          "pt-br": "Entrada de Texto (TextInput Edit)",
+          "en": "TextInput Edit"
+        },
+        "capsDescription": {
+          "pt-br": "",
+          "en": ""
+        },
+        "capsCodeTypes": ["Elemento de Tela", "TextInput Edit"],
+        "capsCodeText": "(...args:any) => <Elements.IptTxtEdit pass={{\n          propsArray: [!#!Properties!#!],\n\n          stylesArray: [!#!Styles!#!],\n\n          editPath: [!#!Edit Path!#!],\n\n          funcsArray: [!#!Functions!#!],\n\n          args,\n        }}/>",
+        "capsCodeInputs": {
+          "ccc_textInputEdit_C-0": {
+            "capsIptCodeID": "ccc_textInputEdit_C-0",
+            "capsIptPosition": "0",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "Propriedades",
+                "en": "Properties"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "{}",
+              "capsIptCapsTypesToAdd": [
+                "Propriedade Texto",
+                "Propriedade Entrada Texto"
+              ]
+            }
+          },
+          "ccc_textInputEdit_C-1": {
+            "capsIptCodeID": "ccc_textInputEdit_C-1",
+            "capsIptPosition": "1",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "Estilos",
+                "en": "Styles"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "{\n                color: 'black',\n                fontSize: 14,\n                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!\n              }",
+              "capsIptCapsTypesToAdd": [
+                "Estilo Layout",
+                "Estilo Caixa",
+                "Estilo Texto",
+                "Grupo de Estilos"
+              ]
+            }
+          },
+          "ccc_textInputEdit_C-2": {
+            "capsIptCodeID": "ccc_textInputEdit_C-2",
+            "capsIptPosition": "2",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "Edit Path",
+                "en": "Edit Path"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "\" \"",
+              "capsIptCapsTypesToAdd": ["string process"]
+            }
+          },
+          "ccc_textInputEdit_C-3": {
+            "capsIptCodeID": "ccc_textInputEdit_C-3",
+            "capsIptPosition": "3",
+            "capsIptRemoved": false,
+            "capsIptType": "capsules",
+            "capsIptCapsInfo": {
+              "capsIptCapsLabel": {
+                "pt-br": "Funções",
+                "en": "Functions"
+              },
+              "capsIptCapsDescription": {
+                "pt-br": "",
+                "en": ""
+              },
+              "capsIptCapsDfCode": "() => {}",
+              "capsIptCapsTypesToAdd": ["setVar", "setTimeout"]
+            }
+          }
+        },
+        "capsCodeVersionID": "1",
+        "capsVersionCreatedAt": {
+          "seconds": 1669821908,
+          "nanoseconds": 764000000
+        }
+      }
+    },
+    "capsType": "code",
+    "capsDB": {
+      "capsID": "ccc_textInputEdit_C",
+      "capsPrjID": "yyy1",
+      "capsCreatedAt": {
+        "seconds": 1669821908,
+        "nanoseconds": 764000000
+      },
+      "capsUserID": "xxx1"
+    }
+  },
+
   "ccc_propObj": {
     "capsCodeInfo": {
       "1": {
