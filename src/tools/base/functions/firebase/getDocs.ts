@@ -11,7 +11,7 @@ type Tprops = {
   pass: { fbInit: any; arrRefStrings: string[]; arrFuncs: any[] };
 };
 
-export const getDocs = async (props: Tprops) => {
+export const getDocsTool = async (props: Tprops) => {
   // ---------- set Props
   const { args, pass } = props;
   const { arrRefStrings, arrFuncs } = pass;
