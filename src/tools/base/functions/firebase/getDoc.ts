@@ -19,10 +19,10 @@ export const getDocTool = async (props: Tprops) => {
   // -----------------------------
   // ---------- set Firestore Call
   // -----------------------------
-  const fbInit = getCtData('all.temp.fbInit');
+  const fbInit = getCtData('all.temp.fireInit');
   console.log({ fbInit });
   console.log({ arrRefStrings });
-  const fireInit = getFirestore(fbInit[0]);
+  const fireInit = getFirestore(fbInit);
   const refColl = doc(fireInit, ...arrRefStrings);
 
   const unsub = onSnapshot(refColl, success => {
