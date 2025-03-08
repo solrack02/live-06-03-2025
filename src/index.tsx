@@ -30,15 +30,15 @@
         (...args: any) => <Elements.Screen3 pass={{
           pathScreen:"sc1",
 
-          styles:['{ backgroundColor: "red", alignItems: "center", justifyContent: "center", flex: 1 }'],
+          styles:[`{ backgroundColor: "red", alignItems: "center", justifyContent: "center", flex: 1 }`],
 
           screenElements:[
         
 
           (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{ disabled: "$var_all.cond1", onHoverIn: "$var_all.func1", children: "$var_all.Comp1" }'],
+            elementsProperties:[`{ disabled: "$var_all.cond1", onHoverIn: "$var_all.func1", children: "$var_all.Comp1" }`],
 
-            styles:['{ backgroundColor: "$var_all.colors.primary", width: 120, height: 40, marginTop: 60, alignItems: "center", justifyContent: "center" }'],
+            styles:[`{ backgroundColor: "$var_all.colors.primary", width: 120, height: 40, marginTop: 60, alignItems: "center", justifyContent: "center" }`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -59,7 +59,7 @@
           ],
 
           children: [
-            'Ir p/ Tela 2'
+            `Ir p/ Tela 2`
           ],
 
           args,
@@ -74,7 +74,7 @@
             {}
           ],
 
-          pData: 'all.lists.lt1',
+          pData: `all.lists.lt1`,
 
           itemElements: [
             
@@ -88,7 +88,7 @@
           ],
 
           children: [
-            '$arg_name'
+            `$arg_name`
           ],
 
           args,
@@ -117,7 +117,7 @@
           ],
 
           children: [
-            '$arg_name'
+            `$arg_name`
           ],
 
           args,
@@ -129,16 +129,16 @@
         
           ],
 
-      styles:['{ flex: 1, backgroundColor: "yellow", width: "100%", height: 60 }'],    args,
+      styles:[`{ flex: 1, backgroundColor: "yellow", width: "100%", height: 60 }`],    args,
         }}/>, 
         (...args:any) => <Elements.Loader pass={{
             size: "small",
-            color: 'black',
+            color: `black`,
             args,
         }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
-          stylesArray: ['{ backgroundColor: "lightblue", padding: 10 }'],
+          stylesArray: [`{ backgroundColor: "lightblue", padding: 10 }`],
 
           editPath: [" "],
 
@@ -215,7 +215,14 @@
           const arrInitFuncs = [
             async (...args) =>
   functions.firebase.fireInit({ args, pass:{
-   fbConfig: 'noPath',
+   fbConfig: `{
+  apiKey: "AIzaSyB9ntwrJDypFXm87NofdXn_oZpGlLzmeYw",
+  authDomain: "cong-maps2.firebaseapp.com",
+  projectId: "cong-maps2",
+  storageBucket: "cong-maps2.appspot.com",
+  messagingSenderId: "646415050546",
+  appId: "1:646415050546:web:ed4fc689f629a9b397592b"
+}`,
 
         }})
           ];
