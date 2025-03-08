@@ -213,7 +213,18 @@
           // console.log(initObj);
 
           const arrInitFuncs = [
-            ()=>{}
+            async (...args) =>
+  functions.firebase.fireInit({ args, pass:{
+   fbConfig: '{
+  apiKey: "AIzaSyB9ntwrJDypFXm87NofdXn_oZpGlLzmeYw",
+  authDomain: "cong-maps2.firebaseapp.com",
+  projectId: "cong-maps2",
+  storageBucket: "cong-maps2.appspot.com",
+  messagingSenderId: "646415050546",
+  appId: "1:646415050546:web:ed4fc689f629a9b397592b"
+}',
+
+        }})
           ];
 
           export const useRoutes = create(() => ({ currRoute }));

@@ -1,27 +1,29 @@
 
 // ---------- set Local Imports
+import JSON5 from 'json5';
 import { initializeApp } from 'firebase/app';
-// import * as firebase from 'firebase/app';
-// console.log({ initializeApp });
 
 type Tprops = { args: any; pass: { fbConfig: any; arrFuncs: any[] } };
 
 export const fireInit = async (props: Tprops) => {
-  // export const fireInit = async () => {
   console.log('fireInit');
   // ---------- set Props
   const { args, pass } = props;
-  const { fbConfig, arrFuncs } = pass;
+  const { fbConfig } = pass;
+
+  if (typeof fbConfig !== 'string') {
+    return console.log('Erro Ao inicializar o Firebase', fbConfig);
+  }
+
+  console.log('BOX', { fbConfig });
+  const parsedObject = JSON5.parse(fbConfig);
+
   // ---------- set Caps Inputs
-  if (typeof fbConfig === 'object') {
+  if (typeof parsedObject === 'object') {
     // ---------- set FB Init on a Variable
-    const fbInit = initializeApp(fbConfig, 'secondary');
+    const fbInit = initializeApp(parsedObject, 'secondary');
     console.log({ fbInit });
-    for (const currFunc of arrFuncs) {
-      await currFunc(fbInit, args);
-    }
   } else {
-    console.log('fbConfig precisa ser um objeto', { fbConfig });
+    console.log('parsedObject precisa ser um objeto', { parsedObject });
   }
 };
-
