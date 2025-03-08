@@ -6,20 +6,20 @@ import { fireInit } from './fireInit';
 // import { uploadFile } from './uploadFile';
 const uploadFile = () => console.log('uploadFile');
 
-import { updateDocTool } from './updateDoc';
-// const updateDocTool = () => console.log('updateDoc');
+// import { updateDocTool } from './updateDoc';
+const updateDocTool = () => console.log('updateDoc');
 
-import { getDocsTool } from './getDocs';
-// const getDocsTool = () => console.log('getDocs');
+// import { getDocsTool } from './getDocs';
+const getDocsTool = () => console.log('getDocs');
 
-import { getDocTool } from './getDoc';
-// const getDocTool = () => console.log('getDoc');
+// import { getDocTool } from './getDoc';
+const getDocTool = () => console.log('getDoc');
 
-import { deleteDocTool } from './deleteDoc';
-// const deleteDocTool = () => console.log('deleteDoc');
+// import { deleteDocTool } from './deleteDoc';
+const deleteDocTool = () => console.log('deleteDoc');
 
-import { setDocTool } from './setDoc';
-// const setDocTool = () => console.log('setDoc');
+// import { setDocTool } from './setDoc';
+const setDocTool = () => console.log('setDoc');
 
 import { whereConds } from './whereConds';
 // const whereConds = () => console.log('whereConds');
