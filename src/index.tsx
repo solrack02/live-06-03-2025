@@ -181,7 +181,12 @@
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [()=>{}]
+ arrFunctions: [async (...args) =>
+        functions.firebase.setDocTool({ args, pass:{
+  arrRefStrings: [`tests`],
+            arrPathData: [`all.dataToSet`],
+            arrFuncs: [()=>{}],
+        }})]
  , trigger: 'on press'
 }})],            childrenItems:[() =><></>],
 
