@@ -27,8 +27,7 @@ export const fireInit = async (props: Tprops) => {
 
     setVar({
       args: {},
-      keyPath: ['all.temp.fireInit'],
-      value: fbInit,
+      pass: { keyPath: ['all.temp.fireInit'], value: fbInit },
     });
   } else {
     console.log('parsedObject precisa ser um objeto', { parsedObject });
