@@ -138,11 +138,7 @@
         }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
-          stylesArray: [{
-                color: 'black',
-                fontSize: 14,
-                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
-              }],
+          stylesArray: ['{ backgroundColor: "lightblue" }'],
 
           editPath: [" "],
 
