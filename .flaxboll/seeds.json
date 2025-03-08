@@ -905,12 +905,7 @@
                 "en": ""
               },
               "capsIptCapsDfCode": "{\n                color: 'black',\n                fontSize: 14,\n                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!\n              }",
-              "capsIptCapsTypesToAdd": [
-                "Estilo Layout",
-                "Estilo Caixa",
-                "Estilo Texto",
-                "Grupo de Estilos"
-              ]
+              "capsIptCapsTypesToAdd": ["string process"]
             }
           },
           "ccc_textInputEdit_C-2": {
@@ -938,8 +933,8 @@
             "capsIptType": "capsules",
             "capsIptCapsInfo": {
               "capsIptCapsLabel": {
-                "pt-br": "Funções",
-                "en": "Functions"
+                "pt-br": "Funções (onChangeText)",
+                "en": "Functions (onChangeText)"
               },
               "capsIptCapsDescription": {
                 "pt-br": "",
