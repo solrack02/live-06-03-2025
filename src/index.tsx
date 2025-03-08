@@ -184,7 +184,7 @@
  arrFunctions: [async (...args) =>
         functions.firebase.getDocsTool({ args, pass:{
             fbInit: ['noPath'],
-            arrRefStrings: ['noPath'],
+            arrRefStrings: [`cycles`],
             arrFuncs: [()=>{}],
         }})]
  , trigger: 'on press'
