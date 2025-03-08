@@ -2,6 +2,7 @@
 // ---------- set Local Imports
 import JSON5 from 'json5';
 import { initializeApp } from 'firebase/app';
+import setVar from '../setVar';
 
 type Tprops = { args: any; pass: { fbConfig: any; arrFuncs: any[] } };
 
@@ -24,7 +25,7 @@ export const fireInit = async (props: Tprops) => {
     const fbInit = initializeApp(parsedObject, 'secondary');
     console.log({ fbInit });
 
-    functions.setVar({
+    setVar({
       args: {},
       keyPath: ['all.temp.fireInit'],
       value: fbInit,
