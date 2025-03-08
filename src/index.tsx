@@ -181,7 +181,12 @@
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [()=>{}]
+ arrFunctions: [async (...args) =>
+        functions.firebase.getDocs({ args, pass:{
+            fbInit: ['noPath'],
+            arrRefStrings: ['noPath'],
+            arrFuncs: [()=>{}],
+        }})]
  , trigger: 'on press'
 }})],            childrenItems:[() =><></>],
 

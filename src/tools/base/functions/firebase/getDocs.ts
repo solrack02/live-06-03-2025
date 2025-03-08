@@ -1,4 +1,6 @@
 
+import { getCtData } from '../';
+
 type Tprops = {
   args: any;
   pass: { fbInit: any; arrRefStrings: string[]; arrFuncs: any[] };
@@ -7,7 +9,7 @@ type Tprops = {
 export const getDocs = async (props: Tprops) => {
   // ---------- set Props
   const { args, pass } = props;
-  const { fbInit, arrRefStrings, arrFuncs } = pass;
+  const { arrRefStrings, arrFuncs } = pass;
 
   // ---------- set Caps Inputs
 
@@ -19,9 +21,9 @@ export const getDocs = async (props: Tprops) => {
   // -----------------------------
   // ---------- set Firestore Call
   // -----------------------------
+  const fbInit = getCtData('all.tem.fbInit');
   console.log({ fbInit });
-  console.log({ arrRefStrings });
-  const fireInit = getFirestore(fbInit[0]);
+  const fireInit = getFirestore(fbInit);
   const refColl = collection(fireInit, ...arrRefStrings);
 
   const unsub = onSnapshot(refColl, success => {
@@ -35,4 +37,3 @@ export const getDocs = async (props: Tprops) => {
     for (const currFunc of arrFuncs) currFunc(arrDocs, args);
   });
 };
-
