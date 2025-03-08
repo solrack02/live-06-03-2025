@@ -130,25 +130,10 @@
           ],
 
       styles:['{ flex: 1, backgroundColor: "yellow", width: "100%", height: 60 }'],    args,
-        }}/>, 
-        (...args:any) => <Elements.Loader pass={{
+        }}/>, (...args:any) => <Elements.Loader pass={{
             size: "small",
             color: 'black',
             args,
-        }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
-
-          stylesArray: [{
-                color: 'black',
-                fontSize: 14,
-                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
-              }],
-
-          editPath: [" "],
-
-          funcsArray: [() => {}],
-
-          args,
         }}/>],
 
           functions:[()=>{}],
