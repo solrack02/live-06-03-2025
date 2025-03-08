@@ -26,7 +26,7 @@ export const deleteDocTool = async (props: Tprops) => {
   // -------- set Firestore Call 1
   // -----------------------------
   const fbInit = getCtData('all.temp.fireInit');
-  console.log('DELETE', { fbInit });
+
   const fireInit: any = getFirestore(fbInit);
   const refColl = doc(fireInit, ...arrRefStrings);
   await deleteDoc(refColl);
