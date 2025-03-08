@@ -1549,7 +1549,7 @@
         },
         "capsCodeTypes": ["function", "firestore", "setDoc"],
         "capsCodeVersionID": "1",
-        "capsCodeText": "async (...args) =>\n        functions.firebase.setDocTool({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrPathData: [!#!path to data!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
+        "capsCodeText": "async (...args) =>\n        functions.firebase.setDocTool({ args, pass:{\n  arrRefStrings: [!#!array firestore reference!#!],\n            arrPathData: [!#!path to data!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
         "capsDescription": {
           "pt-br": "",
           "en": ""
@@ -1562,8 +1562,8 @@
             "capsIptType": "capsules",
             "capsIptCapsInfo": {
               "capsIptCapsLabel": {
-                "pt-br": "firestore init path",
-                "en": "firestore init path"
+                "pt-br": "array firestore reference",
+                "en": "array firestore reference"
               },
               "capsIptCapsDescription": {
                 "pt-br": "",
@@ -1580,8 +1580,8 @@
             "capsIptType": "capsules",
             "capsIptCapsInfo": {
               "capsIptCapsLabel": {
-                "pt-br": "array firestore reference",
-                "en": "array firestore reference"
+                "pt-br": "data to set",
+                "en": "data to set"
               },
               "capsIptCapsDescription": {
                 "pt-br": "",
@@ -1598,24 +1598,6 @@
             "capsIptType": "capsules",
             "capsIptCapsInfo": {
               "capsIptCapsLabel": {
-                "pt-br": "data to set",
-                "en": "data to set"
-              },
-              "capsIptCapsDescription": {
-                "pt-br": "",
-                "en": ""
-              },
-              "capsIptCapsDfCode": "'noPath'",
-              "capsIptCapsTypesToAdd": ["string process"]
-            }
-          },
-          "ccc_fireSetDoc-3": {
-            "capsIptCodeID": "ccc_fireSetDoc-3",
-            "capsIptPosition": "3",
-            "capsIptRemoved": false,
-            "capsIptType": "capsules",
-            "capsIptCapsInfo": {
-              "capsIptCapsLabel": {
                 "pt-br": "functions return",
                 "en": "functions return"
               },
@@ -1624,7 +1606,11 @@
                 "en": ""
               },
               "capsIptCapsDfCode": "()=>{}",
-              "capsIptCapsTypesToAdd": ["setVar", "console log", "func Group"]
+              "capsIptCapsTypesToAdd": [
+                "setVar",
+                "console log",
+                "custom capsule"
+              ]
             }
           }
         }
