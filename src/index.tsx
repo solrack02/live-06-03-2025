@@ -183,7 +183,7 @@
  functions.funcGroup({ args, pass:{
  arrFunctions: [async (...args) =>
         functions.firebase.getDocsTool({ args, pass:{
-   arrRefStrings: [``],
+   arrRefStrings: [`tests`],
             arrFuncs: [()=>{}],
         }})]
  , trigger: 'on press'
