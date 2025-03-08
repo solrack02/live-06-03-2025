@@ -157,7 +157,7 @@
           "en": ""
         },
         "capsCodeTypes": ["string value", "jsValue", "string process"],
-        "capsCodeText": "'!#!string value!#!'",
+        "capsCodeText": "`!#!string value!#!`",
         "capsCodeVersionID": "1",
         "capsCodeInputs": {
           "ccc_stringValue-0": {
