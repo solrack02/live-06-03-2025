@@ -2,7 +2,7 @@
 // ---------- import Packs
 import { getCtData } from '../';
 import { doc } from 'firebase/firestore';
-import { getFirestore, getDocs, onSnapshot } from '@firebase/firestore';
+import { getFirestore, onSnapshot } from 'firebase/firestore';
 
 type Tprops = {
   args: any;
