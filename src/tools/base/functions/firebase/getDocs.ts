@@ -2,7 +2,6 @@
 import { getCtData } from '../';
 import {
   getFirestore,
-  getDocs,
   collection,
   onSnapshot,
 } from 'firebase/firestore';
