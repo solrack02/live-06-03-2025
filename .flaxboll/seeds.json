@@ -2142,5 +2142,44 @@
       },
       "capsUserID": "xxx1"
     }
+  },
+
+  "sss_custom_caps": {
+    "capsDB": {
+      "capsUserID": "usrn5e3jr2CvvnDpHigA",
+      "capsID": "sss_custom_caps",
+      "capsCreatedAt": { "seconds": 1, "nanoseconds": 7 },
+      "capsPrjID": "ZOqi3kZm6c7XjObC79xk"
+    },
+    "capsType": "code",
+    "capsCodeInfo": {
+      "1": {
+        "capsLabel": {
+          "pt-br": "Capsula Personalizada",
+          "en": "Custom Capsule"
+        },
+        "capsDescription": { "pt-br": "", "en": "" },
+        "capsCodeTypes": ["custom capsule"],
+        "capsCodeText": "!#!custom capsule!#!",
+        "capsCodeVersionID": "1",
+        "capsCodeInputs": {
+          "sss_custom_caps-0": {
+            "capsIptType": "text",
+            "capsIptRemoved": false,
+            "capsIptCodeID": "sss_custom_caps-0",
+            "capsIptPosition": "0",
+            "capsIptTxtInfo": {
+              "capsIptTxtLabel": { "pt-br": "Código", "en": "Code" },
+              "capsIptTxtDescription": {
+                "pt-br": "Cuidado! Cápsulas Personalizadas podem gerar erros.",
+                "en": "Cuidado! Cápsulas Personalizadas podem gerar erros."
+              },
+              "capsIptTxtDfValue": "undefined"
+            }
+          }
+        },
+        "capsVersionCreatedAt": { "seconds": 1, "nanoseconds": 7 }
+      }
+    }
   }
 }
