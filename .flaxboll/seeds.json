@@ -1230,7 +1230,7 @@
           "en": ""
         },
         "capsCodeTypes": ["function", "firestore", "deleteDoc"],
-        "capsCodeText": "(...args) =>\n        functions.firebase.deleteDocTool({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
+        "capsCodeText": "(...args) =>\n        functions.firebase.deleteDocTool({ args, pass:{\n   arrRefStrings: [!#!array firestore reference!#!],\n   arrFuncs: [!#!functions return!#!],\n        }})",
         "capsCodeInputs": {
           "ccc_fireDeleteData-0": {
             "capsIptCodeID": "ccc_fireDeleteData-0",
@@ -1239,8 +1239,8 @@
             "capsIptType": "capsules",
             "capsIptCapsInfo": {
               "capsIptCapsLabel": {
-                "pt-br": "firestore init path",
-                "en": "firestore init path"
+                "pt-br": "array firestore reference",
+                "en": "array firestore reference"
               },
               "capsIptCapsDescription": {
                 "pt-br": "",
@@ -1257,24 +1257,6 @@
             "capsIptType": "capsules",
             "capsIptCapsInfo": {
               "capsIptCapsLabel": {
-                "pt-br": "array firestore reference",
-                "en": "array firestore reference"
-              },
-              "capsIptCapsDescription": {
-                "pt-br": "",
-                "en": ""
-              },
-              "capsIptCapsDfCode": "''",
-              "capsIptCapsTypesToAdd": ["string process"]
-            }
-          },
-          "ccc_fireDeleteData-2": {
-            "capsIptCodeID": "ccc_fireDeleteData-2",
-            "capsIptPosition": "2",
-            "capsIptRemoved": false,
-            "capsIptType": "capsules",
-            "capsIptCapsInfo": {
-              "capsIptCapsLabel": {
                 "pt-br": "functions return",
                 "en": "functions return"
               },
@@ -1283,12 +1265,7 @@
                 "en": ""
               },
               "capsIptCapsDfCode": "() => {}",
-              "capsIptCapsTypesToAdd": [
-                "setVar",
-                "console log",
-                "func Group",
-                "customs"
-              ]
+              "capsIptCapsTypesToAdd": ["setVar", "custom capsule"]
             }
           }
         },
