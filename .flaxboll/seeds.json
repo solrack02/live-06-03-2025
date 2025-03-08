@@ -273,7 +273,7 @@
                 "en": ""
               },
               "capsIptCapsDfCode": "()=>{}",
-              "capsIptCapsTypesToAdd": ["function"]
+              "capsIptCapsTypesToAdd": ["fbInit", "fetch", "free value"]
             }
           }
         }
