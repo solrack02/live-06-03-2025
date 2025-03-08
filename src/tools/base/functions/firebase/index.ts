@@ -6,20 +6,20 @@ import { fireInit } from './fireInit';
 // import { uploadFile } from './uploadFile';
 const uploadFile = () => console.log('uploadFile');
 
-import { updateDoc } from './updateDoc';
-// const updateDoc = () => console.log('updateDoc');
+import { updateDocTool } from './updateDoc';
+// const updateDocTool = () => console.log('updateDoc');
 
-import { getDocs } from './getDocs';
-// const getDocs = () => console.log('getDocs');
+import { getDocsTool } from './getDocs';
+// const getDocsTool = () => console.log('getDocs');
 
-import { getDoc } from './getDoc';
-// const getDoc = () => console.log('getDoc');
+import { getDocTool } from './getDoc';
+// const getDocTool = () => console.log('getDoc');
 
-import { deleteDoc } from './deleteDoc';
-// const deleteDoc = () => console.log('deleteDoc');
+import { deleteDocTool } from './deleteDoc';
+// const deleteDocTool = () => console.log('deleteDoc');
 
-import { setDoc } from './setDoc';
-// const setDoc = () => console.log('setDoc');
+import { setDocTool } from './setDoc';
+// const setDocTool = () => console.log('setDoc');
 
 import { whereConds } from './whereConds';
 // const whereConds = () => console.log('whereConds');
@@ -32,12 +32,12 @@ export const firebase = {
 
   uploadFile,
 
-  getDoc,
-  getDocs,
-  updateDoc,
+  getDocTool,
+  getDocsTool,
+  updateDocTool,
 
-  deleteDoc,
-  setDoc,
+  deleteDocTool,
+  setDocTool,
 
   whereConds,
   where,
