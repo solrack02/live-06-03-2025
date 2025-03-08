@@ -1402,7 +1402,7 @@
         },
         "capsCodeTypes": ["function", "firestore", "getDocs"],
         "capsCodeVersionID": "1",
-        "capsCodeText": "async (...args) =>\n        functions.firebase.getDocsTool({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
+        "capsCodeText": "async (...args) =>\n        functions.firebase.getDocsTool({ args, pass:{\n   arrRefStrings: [!#!array firestore reference!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
         "capsDescription": {
           "pt-br": ""
         },
@@ -1410,24 +1410,6 @@
           "ccc_fireGetDocs-0": {
             "capsIptCodeID": "ccc_fireGetDocs-0",
             "capsIptPosition": "0",
-            "capsIptRemoved": false,
-            "capsIptType": "capsules",
-            "capsIptCapsInfo": {
-              "capsIptCapsLabel": {
-                "pt-br": "firestore init path",
-                "en": "firestore init path"
-              },
-              "capsIptCapsDescription": {
-                "pt-br": "",
-                "en": ""
-              },
-              "capsIptCapsDfCode": "'noPath'",
-              "capsIptCapsTypesToAdd": ["string process"]
-            }
-          },
-          "ccc_fireGetDocs-1": {
-            "capsIptCodeID": "ccc_fireGetDocs-1",
-            "capsIptPosition": "1",
             "capsIptRemoved": false,
             "capsIptType": "capsules",
             "capsIptCapsInfo": {
@@ -1443,9 +1425,9 @@
               "capsIptCapsTypesToAdd": ["string process"]
             }
           },
-          "ccc_fireGetDocs-2": {
-            "capsIptCodeID": "ccc_fireGetDocs-2",
-            "capsIptPosition": "2",
+          "ccc_fireGetDocs-1": {
+            "capsIptCodeID": "ccc_fireGetDocs-1",
+            "capsIptPosition": "1",
             "capsIptRemoved": false,
             "capsIptType": "capsules",
             "capsIptCapsInfo": {
