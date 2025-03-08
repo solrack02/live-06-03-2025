@@ -181,7 +181,11 @@
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [()=>{}]
+ arrFunctions: [(...args) =>
+        functions.firebase.deleteDocTool({ args, pass:{
+   arrRefStrings: [''],
+   arrFuncs: [() => {}],
+        }})]
  , trigger: 'on press'
 }})],            childrenItems:[() =><></>],
 
