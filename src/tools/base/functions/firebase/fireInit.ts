@@ -2,7 +2,7 @@
 // ---------- set Local Imports
 import JSON5 from 'json5';
 import { initializeApp } from 'firebase/app';
-import setVar from '../setVar';
+import { setVar } from '../';
 
 type Tprops = { args: any; pass: { fbConfig: any; arrFuncs: any[] } };
 
