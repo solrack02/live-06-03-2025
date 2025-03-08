@@ -23,6 +23,12 @@ export const fireInit = async (props: Tprops) => {
     // ---------- set FB Init on a Variable
     const fbInit = initializeApp(parsedObject, 'secondary');
     console.log({ fbInit });
+
+    functions.setVar({
+      args: {},
+      keyPath: ['all.temp.fireInit'],
+      value: fbInit,
+    });
   } else {
     console.log('parsedObject precisa ser um objeto', { parsedObject });
   }
