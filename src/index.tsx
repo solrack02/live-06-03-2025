@@ -165,20 +165,54 @@
               }
               ],
 
-          screenElements:[() => {
-                  const textStyle = {
-                    fontSize: 20,
-                    color: '#fff2',
-                    textAlign:'center',
-                    maxWidth: 200,
-                    // maxWidth: '200px'<= #ATTENTION: Native ERROR! No string!
-                  };
+          screenElements:[
 
-                  return (
-                    <RN.Text style={textStyle}>
-                      {'Adicione Elementos nessa tela!'}
-                    </RN.Text>);
-                }],
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) => {
+          // ---------- set Capsules Inputs
+          const arrUrl = ['https://api.github.com/users']
+          const initProps = {"method":"GET"}
+          const errFuncs = [()=>{}];
+          const successFuncs = [()=>{}];
+          console.log({initProps});
+
+          // ---------- set Url Value as a single string
+          const url = arrUrl.reduce((prev,curr)=>prev + curr, '')
+          console.log({url});
+
+          // ---------- set Return
+          await fetch(url, initProps)
+          .then((res) => (async () => {
+            for (const currFunc of successFuncs){
+              // console.log({res, currFunc});
+              await currFunc(res, args);
+            }
+          })())
+          .catch(err => (async () => {
+            for (const currFunc of errFuncs){
+              await currFunc(err, args);
+            }
+          })());
+        }]
+ , trigger: 'on press'
+}})],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        ],
 
           functions:[()=>{}],
 
