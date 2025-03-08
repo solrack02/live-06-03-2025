@@ -2103,7 +2103,7 @@
                 "en": ""
               },
               "capsIptCapsDfCode": "()=>{}",
-              "capsIptCapsTypesToAdd": ["free value"]
+              "capsIptCapsTypesToAdd": ["custom capsule"]
             }
           },
           "ccc_fetch_B-3": {
@@ -2121,7 +2121,7 @@
                 "en": ""
               },
               "capsIptCapsDfCode": "()=>{}",
-              "capsIptCapsTypesToAdd": ["free value"]
+              "capsIptCapsTypesToAdd": ["custom capsule"]
             }
           }
         },
