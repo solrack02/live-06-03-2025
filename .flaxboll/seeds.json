@@ -1443,9 +1443,7 @@
               "capsIptCapsTypesToAdd": [
                 "setVar",
                 "console log",
-                "condition",
-                "func Group",
-                "customs"
+                "custom capsule"
               ]
             }
           }
