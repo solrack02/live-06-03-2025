@@ -94,6 +94,7 @@
           args,
 
         }}/>, 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -126,7 +127,25 @@
 
             args,
           }}/>
-        
+        , 
+
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[
+              {
+                height: "50px",
+                width: "80px",
+                backgroundColor: "#FDFDFD",
+                borderWidth: 2,
+                borderColor: "#EEE"
+              }
+              ],
+
+      URIvariablePath:[`$arg_img`],
+
+      args,
+    }}/>
           ],
 
       styles:[`{ flex: 1, backgroundColor: "yellow", width: "100%", height: 60 }`],    args,
