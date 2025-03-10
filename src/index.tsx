@@ -19,7 +19,7 @@
           import { tools } from './tools';
 
           // ---------- set Caps Inputs
-          const currRoute = 'sc2';
+          const currRoute = 'sc1';
 
           let args: any = [];
 
