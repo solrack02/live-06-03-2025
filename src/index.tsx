@@ -250,7 +250,7 @@
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ flex: 1 }`],
+            styles:[`{ flex: 1, flexDirection: "row" }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
 
