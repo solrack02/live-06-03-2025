@@ -240,7 +240,22 @@
 
             styles:[`{ width: 40, height: 40, alignItems: "center", justifyContent: "center", borderColor: "black", borderWidth: 1 }`],
 
-            functions:[()=>{}],            childrenItems:[() =><></>],
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `o`
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
