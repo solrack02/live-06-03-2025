@@ -278,7 +278,27 @@
 
             styles:[`{ width: 40, height: 40, alignItems: "center", justifyContent: "center", borderColor: "black", borderWidth: 1 }`],
 
-            functions:[()=>{}],            childrenItems:[() =><></>],
+            functions:[()=>{}],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ width: 10, height: 10, backgroundColor: "blue" }`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("home");
+        }
+        ]
+ , trigger: 'on press'
+}})],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
