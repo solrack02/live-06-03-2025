@@ -96,7 +96,9 @@ export const DynView = (props: Tprops) => {
 
   // ---------- set Render
   if (!sttTypeFunc)
-    return <View {...allProps}>{mapElements(childrenItems, args)}</View>;
+    return (
+      <ScrollView {...allProps}>{mapElements(childrenItems, args)}</ScrollView>
+    );
 
   if (sttTypeFunc === 'on press') {
     allProps.children = mapElements(childrenItems, args);
@@ -108,5 +110,7 @@ export const DynView = (props: Tprops) => {
   }
 
   if (sttTypeFunc === 'on init')
-    return <View {...allProps}>{mapElements(childrenItems, args)}</View>;
+    return (
+      <ScrollView {...allProps}>{mapElements(childrenItems, args)}</ScrollView>
+    );
 };
