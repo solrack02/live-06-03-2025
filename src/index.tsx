@@ -238,7 +238,7 @@
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ width: 50, height: 50, alignItems: "center", justifyContent: "center" }`],
+            styles:[`{ width: 40, height: 40, alignItems: "center", justifyContent: "center", borderColor: "black", borderWidth: 1 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
 
@@ -261,7 +261,7 @@
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ width: 50, height: 50, alignItems: "center", justifyContent: "center" }`],
+            styles:[`{ width: 40, height: 40, alignItems: "center", justifyContent: "center", borderColor: "black", borderWidth: 1 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
 
