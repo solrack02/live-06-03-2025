@@ -13,4 +13,4 @@ Colaborative Open Source
 | :--------------- | :--------------- | :------------------ |
 | Juan Diego       | CEO & Fundador   | [@Juan_Morfos]      |
 | Sohil            | Soluções de Dados| [@Sohil_Profile]    |
-| [Seu nome]       | [Sua função]     | [Seu contato]       |
+| Carlos Alberto       | Designer     | [@solrack02]       |
