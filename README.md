@@ -1,7 +1,7 @@
 # BAD ROBOTS
 Colaborative Open Source
 
-![Conceito de Bad Bots](assets/bad-robots.png)
+![Conceito de Bad Bots](assets/bad-robots2.png)
 | Coluna 1 | Coluna 2 | Coluna 3 |
 | :--- | :---: | ---: |
 | Dado A | Dado B | Dado C |
