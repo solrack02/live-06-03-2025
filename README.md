@@ -3,3 +3,11 @@
 | :--- | :---: | ---: |
 | Dado A | Dado B | Dado C |
 | Dado D | Dado E | Dado F |
+
+### Núcleo Fundador
+
+| Nome             | Função           | Contato             |
+| :--------------- | :--------------- | :------------------ |
+| Juan Diego       | CEO & Fundador   | [@Juan_Morfos]      |
+| Sohil            | Soluções de Dados| [@Sohil_Profile]    |
+| [Seu nome]       | [Sua função]     | [Seu contato]       |
